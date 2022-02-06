@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   public sideMenuLinks = [
-    { title: 'Dashboard', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Photos', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Available Missions', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Master List', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Chat', url: '/folder/Chat', icon: 'trash' },
+    { title: 'Home', url: '/home', icon: 'home' },
+    { title: 'Photos', url: '/home', icon: 'paper-plane' },
+    { title: 'Available Missions', url: '/home', icon: 'heart' },
+    { title: 'Movie Search', url: '/movies-page', icon: 'archive' },
+    { title: 'Chat', url: '/home', icon: 'trash' },
   ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
