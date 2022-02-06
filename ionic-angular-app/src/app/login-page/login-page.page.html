@@ -1,29 +1,21 @@
-<ion-header>
-  <!-- <ion-toolbar>
-    <ion-title>login-page</ion-title>
-  </ion-toolbar> -->
+<!-- <ion-header>
 
 
-</ion-header>
+</ion-header> -->
 
-<ion-content class="ion-text-center">
+<ion-content class="ion-text-center bgr">
 
-    <ion-grid ion-justify-content-between>
+    <ion-grid class="spaceEvenly">
 
-      <ion-row>
+      <ion-row class="logo">
         <ion-col>
             <img src="../../assets/icon/favicon.png" alt="logo-image">
         </ion-col>
       </ion-row>
 
-      <ion-row>
-        <ion-col>
-            <h2>Sign In</h2>
-        </ion-col>
-      </ion-row>
-
       <ion-row >
-        <ion-col size-lg="3" offset-lg="5">
+        <ion-col>
+          <h2>Sign In</h2>
           <ion-input class="ion-text-start" type='email' placeholder="E-mail">
             <ion-icon name="mail-outline"></ion-icon>
           </ion-input>
@@ -35,19 +27,14 @@
 
       <ion-row>
         <ion-col>
-            <span>Sign In with</span>
+            <p>Sign In with</p>
+            <ion-button fill="clear">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </ion-button>
         </ion-col>
       </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <ion-button fill="clear">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
+      <ion-row class="btn">
         <ion-col>
           <ion-button class="ion-margin-end" fill="outline" shape="round" color="dark" size="large" >Sign Up</ion-button>
           <ion-button class="ion-margin-start" shape="round" color="dark" size="large" [routerLink]="['/movies-page']">Sign In</ion-button>
@@ -58,6 +45,6 @@
     </ion-grid>
 
 </ion-content>
-<ion-footer class="ion-text-center">
-  <p >Terms and conditions</p>
+<ion-footer class="ion-text-center ion-no-border">
+  <p><a>Terms and conditions</a></p>
 </ion-footer>
