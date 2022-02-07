@@ -1,0 +1,15 @@
+.menuLinks {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.menuLinks img {
+  width: 20%;
+}
+
+.powerBtn {
+  margin: 40px auto;
+}

@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./login-page/login-page.module').then( m => m.LoginPagePageModule)
   },
   {
-    path: 'master-list',
-    loadChildren: () => import('./master-list/master-list.module').then( m => m.MasterListPageModule)
-  },
-  {
     path: 'movies-page',
     loadChildren: () => import('./movies-page/movies-page.module').then( m => m.MoviesPagePageModule)
   },

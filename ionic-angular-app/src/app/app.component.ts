@@ -11,10 +11,9 @@ export class AppComponent {
     { title: 'Home', url: '/home', icon: 'home' },
     { title: 'Photos', url: '/home', icon: 'paper-plane' },
     { title: 'Available Missions', url: '/home', icon: 'heart' },
-    { title: 'Movie Search', url: '/movies-page', icon: 'archive' },
+    { title: 'Movies Search', url: '/movies-page', icon: 'archive' },
     { title: 'Chat', url: '/home', icon: 'trash' },
   ];
-  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor() {}
 }
