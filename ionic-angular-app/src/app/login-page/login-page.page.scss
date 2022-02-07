@@ -13,9 +13,6 @@
   align-self: center;
   margin-bottom: 70px;
 }
-.bgr {
-  color: brown;
-}
 ion-icon {
   margin: 10px;
 }
@@ -25,6 +22,16 @@ ion-input {
   padding-left: 30px;
   border: 1px solid rgba(231, 231, 231, 0.562);
   border-radius: 5px;
+}
+.forgotPassword {
+  text-align: right;
+  margin-right: -5px;
+  margin-bottom: 30px;
+}
+.forgotPassword a {
+  font-size: 0.8em;
+  color: rgb(141, 141, 141);
+  text-decoration: none;
 }
 h2 {
   margin-bottom: 25px;

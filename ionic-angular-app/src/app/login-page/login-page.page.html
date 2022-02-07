@@ -1,9 +1,5 @@
-<!-- <ion-header>
 
-
-</ion-header> -->
-
-<ion-content class="ion-text-center bgr">
+<ion-content class="ion-text-center">
 
     <ion-grid class="spaceEvenly">
 
@@ -16,18 +12,23 @@
       <ion-row >
         <ion-col>
           <h2>Sign In</h2>
-          <ion-input class="ion-text-start" type='email' placeholder="E-mail">
+          <ion-input class="ion-text-start" type='email' placeholder="E-mail" [(ngModel)]="emailInputValue">
             <ion-icon name="mail-outline"></ion-icon>
           </ion-input>
-          <ion-input class="ion-text-start" type='password' placeholder="Password">
+          <ion-input class="ion-text-start" type='password' placeholder="Password" [(ngModel)]="passwordInputValue">
             <ion-icon name="lock-closed-outline"></ion-icon>
           </ion-input>
+          <div class="forgotPassword">
+            <a href="" target="">forgot password?</a>
+          </div>
+
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col>
-            <p>Sign In with</p>
+            <span>Sign In with</span>
+            <br/>
             <ion-button fill="clear">
               <ion-icon name="logo-facebook"></ion-icon>
             </ion-button>
@@ -36,8 +37,8 @@
 
       <ion-row class="btn">
         <ion-col>
-          <ion-button class="ion-margin-end" fill="outline" shape="round" color="dark" size="large" >Sign Up</ion-button>
-          <ion-button class="ion-margin-start" shape="round" color="dark" size="large" [routerLink]="['/movies-page']">Sign In</ion-button>
+          <ion-button class="ion-margin-end" fill="outline" shape="round" color="dark" size="large">Sign Up</ion-button>
+          <ion-button class="ion-margin-start" shape="round" color="dark" size="large" (click)="loginValidator()">Sign In</ion-button>
         </ion-col>
       </ion-row>
 
