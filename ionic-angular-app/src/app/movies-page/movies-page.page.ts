@@ -13,7 +13,9 @@ export class MoviesPagePage implements OnInit {
   searchTerm = '';
   type: SearchType = SearchType.all;
 
-  constructor(private moviesService: MoviesService) { }
+  constructor(private moviesService: MoviesService) {
+    this.results = this.moviesService.initialLoad('Friends', SearchType.all);
+   }
 
   ngOnInit() {
   }

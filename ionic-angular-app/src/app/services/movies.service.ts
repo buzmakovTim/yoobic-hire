@@ -19,8 +19,17 @@ export class MoviesService {
   url = 'https://www.omdbapi.com';
   apiKey = '546832d';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
+
+  initialLoad(title: string, type: SearchType): Observable<any> {
+    return this.http.get(`${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${this.apiKey}`).pipe(
+      map(results => {
+        console.log('Data: ', results);
+        return results['Search'];
+      })
+    );
+  }
 
   searchData(title: string, type: SearchType): Observable<any>{
     return this.http.get(`${this.url}?s=${encodeURI(title)}&type=${type}&apikey=${this.apiKey}`).pipe(
